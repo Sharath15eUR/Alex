@@ -1,7 +1,0 @@
-# creating a file "sample2.txt"
-touch sample2.txt
-
-# removing write permission for group user alone
-chmod g-w sample2.txt
-# Alternative
-chmod 757 sample2.txt 
