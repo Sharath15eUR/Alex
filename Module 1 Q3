@@ -1,0 +1,5 @@
+touch sample3.txt
+mkdir dir1
+ln -s $(pwd)/sample3.txt dir1/sample3_link1.txt
+mkdir dir2
+ln -s $(pwd)/dir1/sample3_link1.txt dir2/sample3_link2.txt
