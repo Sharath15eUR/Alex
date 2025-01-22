@@ -1,0 +1,5 @@
+touch sample1.txt
+chmod a+x sample1.txt 
+# Alternatives
+chmod 777 sample1.txt 
+chmod u+x,g+x,o+x sample1.txt 
