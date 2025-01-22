@@ -1,0 +1,13 @@
+# make a folder named "dir1"
+mkdir dir1
+
+# getting inside "dir1"
+cd dir1
+
+# make 3 files inside "dir1"
+touch file1.txt
+touch file2.txt
+touch file3.txt
+
+# re-direct the output of list command with sorted by timestamp of the files to a "sorted_files.txt"
+ls -lt >> sorted_files.txt
