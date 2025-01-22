@@ -1,8 +1,0 @@
-alex@focalfossa :~ /Desktop$ touch sample.txt
-alex@focalfossa :~ /Desktop$ ls -l
-total
--rw-rw-r-- 1 alex alex 0 Jan 22 18:00 sample.txt
-alex@focalfossa :~ /Desktop$ chmod g-w sample.txt
-alex@focalfossa :~ /Desktop$ ls -l
-total 0
--rw-r--r-- 1 alex alex 0 Jan 22 18:00 sample.txt
