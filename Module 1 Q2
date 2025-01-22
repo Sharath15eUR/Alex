@@ -1,0 +1,4 @@
+touch sample2.txt
+chmod g-w sample2.txt
+# Alternative
+chmod 757 sample2.txt 
