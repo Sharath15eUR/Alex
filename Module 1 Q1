@@ -1,8 +1,0 @@
-# creating a file "sample1.txt"
-touch sample1.txt
-
-# adding executable permission to all users (user, group and others)
-chmod a+x sample1.txt 
-# Alternatives
-chmod 777 sample1.txt 
-chmod u+x,g+x,o+x sample1.txt 
