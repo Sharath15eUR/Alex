@@ -11,11 +11,3 @@ listen 80;
 proxy_pass http://127.0.0.1:8080;
 error_log /var/log/127.0.0.1_error.log;
 access_log /var/log/127.0.0.1_access.log;
-
-
-
-
-
-
-127.0.0.1 server vlah vlah 127.0.0.1
-alex@focalfossa :~ /Desktop$
