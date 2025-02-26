@@ -1,0 +1,17 @@
+alex@focalfossa :~ /Desktop$ mkdir dir
+alex@focalfossa :~ /Desktop$ cd dir
+alex@focalfossa :~ /Desktop/dir$ touch file1.txt
+alex@focalfossa :~ /Desktop/dir$ touch file2.txt
+alex@focalfossa :~ /Desktop/dir$ touch file3.txt
+alex@focalfossa :~ /Desktop/dir$ ls -lt
+total 0
+-rw-rw-r-- 1 alex alex 0 Jan 22 18:24 file3.txt
+-rw-rw-r-- 1 alex alex 0 Jan 22 18:24 file2.txt
+-rw-rw-r-- 1 alex alex 0 Jan 22 18:24 file1.txt
+alex@focalfossa :~ /Desktop/dir$ ls -lt >> sorted_files.txt
+alex@focalfossa :~ /Desktop/dir$ cat sorted_files.txt
+total 0
+-rw-rw-r-- 1 alex alex 0 Jan 22 18:25 sorted_files.txt
+-rw-rw-r-- 1 alex alex 0 Jan 22 18:24 file3.txt
+-rw-rw-r-- 1 alex alex 0 Jan 22 18:24 file2.txt
+-rw-rw-r-- 1 alex alex 0 Jan 22 18:24 file1.txt

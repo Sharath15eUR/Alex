@@ -1,0 +1,14 @@
+alex@focalfossa :~ /Desktop$ touch sample.txt
+alex@focalfossa :~ /Desktop$ mkdir dir1
+alex@focalfossa :~ /Desktop$ ln -s $(pwd)/sample.txt dir1/sample_link_1.txt
+alex@focalfossa :~ /Desktop$ cd dir1
+alex@focalfossa :~ /Desktop/dir1$ ls -l
+total 0
+lrwxrwxrwx 1 alex alex 29 Jan 22 18:05 sample_link_1.txt -> /home/alex/Desktop/sample.txt
+alex@focalfossa :~ /Desktop/dir1$ cd ..
+alex@focalfossa :~ /Desktop$ mkdir dir2
+alex@focalfossa :~ /Desktop$ ln -s $(pwd)/dir1/sample_link_1.txt dir2/sample_link_2.txt
+alex@focalfossa :~ /Desktop$ cd dir2
+alex@focalfossa :~ /Desktop/dir2$ ls -l
+total 0
+lrwxrwxrwx 1 alex alex 41 Jan 22 18:07 sample_link_2. txt -> /home/alex/Desktop/dir1/sample_link_1.txt

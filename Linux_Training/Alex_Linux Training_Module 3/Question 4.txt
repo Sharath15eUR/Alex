@@ -1,0 +1,25 @@
+#!/bin/bash
+
+source="$1"
+backup="$2"
+extension="$3"
+
+if [ ! -d "$backup" ]; then
+    mkdir -p "$backup"
+fi
+
+array=()
+for file in "$source"/*"$extension"; do
+    array+=("$file")
+done
+
+export BACKUP_COUNT=0
+for file in "${array[@]}"; do
+    size=$(stat -c%s "$file")
+    echo "File: $file, Size: ${size} bytes"
+    cp "$file" "$backup"
+    ((BACKUP_COUNT++))
+done
+
+echo "Backup Completed!"
+echo "Total Backup files: ${BACKUP_COUNT}"

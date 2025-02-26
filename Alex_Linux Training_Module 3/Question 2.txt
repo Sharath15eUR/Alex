@@ -1,8 +1,0 @@
-#!/bin/bash
-
-source="$1"
-ext="$2"
-
-for file in "$source"/*"$ext"; do
-  [ -f "$file" ] && echo "$file"
-done

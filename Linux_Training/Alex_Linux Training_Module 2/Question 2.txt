@@ -1,0 +1,13 @@
+alex@focalfossa:~/Desktop$ cat config.txt
+server_name localhost;
+listen 80;
+proxy_pass http://localhost:8080;
+error_log /var/log/localhost_error.log;
+access_log /var/log/localhost_access.log;
+alex@focalfossa:~/Desktop$ sed 's/localhost/127. 0.0.1/g' config.txt > updated_config.txt
+alex@focalfossa:~/Desktop$ cat updated_config.txt
+server_name 127.0.0.1;
+listen 80;
+proxy_pass http://127.0.0.1:8080;
+error_log /var/log/127.0.0.1_error.log;
+access_log /var/log/127.0.0.1_access.log;

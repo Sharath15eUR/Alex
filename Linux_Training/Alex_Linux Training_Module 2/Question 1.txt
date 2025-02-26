@@ -1,0 +1,4 @@
+root@focalfossa:/#  ls -l | awk '$5 > 1048576 {print $9}' > files_1M.txt
+root@focalfossa:/#  cat files_1M.txt
+swapfile
+root@focalfossa:/#
