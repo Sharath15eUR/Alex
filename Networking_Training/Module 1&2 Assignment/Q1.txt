@@ -1,0 +1,3 @@
+alex@focalfossa:~/Desktop$ scp -r my_folder user@192.166.1.100:/home/user/
+ssh: connect to host 192.166.1.100 port 22: Connection refused
+lost connection

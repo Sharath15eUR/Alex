@@ -1,0 +1,5 @@
+After exploring packet filters with tools like Wireshark, TCP-dump, and Cisco Packet Tracer, I gathered that packet filtering is a crucial network security mechanism. It involves inspecting data packets transmitted over a network and either allowing or blocking them based on predefined rules. 
+
+1) Wireshark helps visualize network traffic. 
+2) TCP-dump offers a command-line approach to capture and analyze packets, useful for filtering specific traffic types using expressions like filtering by IP or port .
+3) Cisco Packet Tracer provides a simulation environment to configure and test packet filtering policies on virtual network devices.

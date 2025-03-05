@@ -1,0 +1,36 @@
+root@focalfossa:/home/alex/Desktop# vsftpd -v
+vsftpd: version 3.0.5
+root@focalfossa:/home/alex/Desktop# 
+root@focalfossa:/home/alex/Desktop# systemctl enable vsftpd
+Synchronizing state of vsftpd.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install enable vsftpd
+root@focalfossa:/home/alex/Desktop# useradd alex
+useradd: user 'alex' already exists
+root@focalfossa:/home/alex/Desktop# useradd -m ftpuser
+root@focalfossa:/home/alex/Desktop# passwd ftpuser
+New password: 
+Retype new password: 
+passwd: password updated successfully
+root@focalfossa:/home/alex/Desktop# ftp 127.0.0.1
+Connected to 127.0.0.1.
+220 (vsFTPd 3.0.5)
+Name (127.0.0.1:alex): alex
+331 Please specify the password.
+Password:
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> put my_folder/file1.txt
+local: my_folder/file1.txt remote: my_folder/file1.txt
+200 PORT command successful. Consider using PASV.
+550 Permission denied.
+ftp> put my_folder
+local: my_folder remote: my_folder
+my_folder: not a plain file.
+ftp> get my_folder
+local: my_folder remote: my_folder
+200 PORT command successful. Consider using PASV.
+550 Failed to open file.
+ftp> bye
+221 Goodbye.
+root@focalfossa:/home/alex/Desktop# 

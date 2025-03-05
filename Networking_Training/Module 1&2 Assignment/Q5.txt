@@ -1,0 +1,1 @@
+Address Resolution Protocol (ARP) may map the same IP address to two different MAC addresses, leading to inconsistent ARP table entries. This can result in traffic being sent to the wrong device, causing connectivity issues.

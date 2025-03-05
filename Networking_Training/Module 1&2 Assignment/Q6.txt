@@ -1,0 +1,27 @@
+1) For VNC Viewer
+
+Setup on the Remote System (VNC Server):
+1. Install a VNC Server
+2. Set a strong password for remote access.
+3. Launch the VNC server and note the IP address and port
+
+Connecting from the Client System (VNC Viewer):
+1. Download VNC Viewer:
+Install VNC Viewer on your local machine from the official website.
+2. Launch VNC Viewer:
+3. Type the remote system’s IP address 
+4. Enter the password you set up on the VNC Server.
+
+2) For AnyDesk
+
+Setup on the Remote System (AnyDesk Host):
+1. Download and Install AnyDesk
+2. Launch AnyDesk
+3. Set up unattended access if needed by configuring a password.
+
+Connecting from the Client System:
+1. Download and install AnyDesk on your local system.
+2. Open AnyDesk, then type in the remote system’s AnyDesk address.
+3. Click “Connect” to send a connection request.
+4. On the remote system, accept the incoming connection.
+5. Enter the password if unattended access is configured.

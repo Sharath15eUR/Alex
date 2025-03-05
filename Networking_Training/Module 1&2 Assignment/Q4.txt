@@ -1,0 +1,18 @@
+1) The ping command is used to test network connectivity by sending ICMP Echo Request packets to a specified host and measuring the response time.
+Syntax : ping <IP/Hostname>
+
+2)The arp (Address Resolution Protocol) command is used to view and manipulate the system’s ARP table, which maps IP addresses to MAC addresses.
+Syntax : arp -a
+arp -d <IP> : Deletes a specific ARP entry (requires root privileges)
+arp -s <IP> <MAC> : Manually adds a static ARP entry
+
+3) ipconfig is used to display and configure network interfaces
+Parameters:
+
+inet -> IPv4 address assigned to the interface.
+inet6 -> IPv6 address assigned to the interface.
+netmask -> Subnet mask defining the network range.
+broadcast -> Broadcast address for the network.
+mtu -> Maximum Transmission Unit, indicating packet size.
+UP / DOWN -> Interface status (active/inactive).
+RX / TX packets -> Number of received/transmitted packets.
