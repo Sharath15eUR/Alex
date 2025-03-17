@@ -1,0 +1,6 @@
+* Accessing the home router’s web interface:
+
+1) by opening a web browser and typing either 192.168.1.1 or 192.168.0.1 into the address bar
+2) Prompted for a username and password. 
+3) Navigate to a section labeled “Connected Devices” depending on the router’s firmware.
+4) We can view a list of all devices currently linked to your network, along with details such as their IP addresses, MAC addresses and sometimes hostnames.

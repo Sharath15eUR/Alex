@@ -1,0 +1,5 @@
+* A DHCP (Dynamic Host Configuration Protocol) server automates the process of assigning IP addresses and other network configuration parameters to devices on a network. 
+
+1. When a device connects to the network, it broadcasts a DHCPDISCOVER message seeking available IP configuration. 2. The DHCP server receives this message and responds with a DHCPOFFER, which includes an available IP address, subnet mask, gateway, and other settings like DNS servers. 
+3. The device then replies with a DHCPREQUEST message, indicating its acceptance of the offered parameters. 
+4. The server confirms the assignment by sending a DHCPACK message, formally leasing the IP address to the device for a specific period of time.

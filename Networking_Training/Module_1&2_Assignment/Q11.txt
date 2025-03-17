@@ -1,0 +1,6 @@
+alex@focalfossa:~$ ssh user@192.10.1.2
+ssh: connect to host 192.10.1.2 port 22: Connection timed out
+alex@focalfossa:~$ telnet 192.10.1.2
+Trying 192.10.1.2...
+telnet: Unable to connect to remote host: Connection timed out
+alex@focalfossa:~$

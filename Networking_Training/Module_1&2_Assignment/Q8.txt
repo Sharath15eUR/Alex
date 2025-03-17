@@ -1,0 +1,5 @@
+* The iwconfig and ifconfig commands in Linux are powerful tools used to gather detailed information about network interfaces. iwconfig is specifically used for wireless interfaces, allowing users to check parameters such as the wireless mode (e.g., Managed, Ad-Hoc), frequency, access point MAC address, signal strength, link quality, bit rate (interface speed) and encryption key status. 
+
+* On the other hand, ifconfig is a general-purpose tool used to view and configure both wired and wireless interfaces. It displays essential parameters including IP address, MAC address, netmask, broadcast address, RX/TX packet statistics and the MTU (Maximum Transmission Unit), which indicates the maximum packet size that can be transmitted. 
+
+* The interface speed shown in ifconfig or sometimes through complementary tools like ethtool helps to understand the bandwidth capacity of the interface (e.g., 100 Mbps or 1 Gbps). By analyzing these parameters, network administrators can troubleshoot connectivity issues, optimize performance and ensure the proper configuration of interfaces in both personal and enterprise-level networks.
