@@ -1,0 +1,14 @@
+1) 10.1.1.1
+Class: A
+Default Subnet Mask: 255.0.0.0 (/8)
+IP Range for Class A: 1.0.0.0 – 126.255.255.255
+
+2) 172.16.5.10
+Class: B
+Default Subnet Mask: 255.255.0.0 (/16)
+IP Range for Class B: 128.0.0.0 – 191.255.255.255
+
+3) 192.168.1.5
+Class: C
+Default Subnet Mask: 255.255.255.0 (/24)
+IP Range for Class C: 192.0.0.0 – 223.255.255.255

@@ -1,0 +1,13 @@
+* ARP Request
+
+Concept: The first packet shows an ARP request asking “Who has 192.168.148.146? Tell 192.168.148.5.”
+The sender (192.168.148.5) includes its own MAC address (d2:ec:f3:fe:95:1c) and IP address, but sets the target MAC to all zeros (00:00:00:00:00:00), indicating it doesn’t know the MAC address of the target IP (192.168.148.146).
+This request is typically broadcast on the local LAN so that the device with IP 192.168.148.146 can respond.
+
+
+
+* ARP Reply
+
+Concept: The second packet is the ARP reply from the target device (192.168.148.146). It provides its MAC address (74:12:b3:d0:0e:7b) to the requesting host.
+The sender IP is now 192.168.148.146 and the target IP is 192.168.148.5, with the target MAC set to d2:ec:f3:fe:95:1c (the original requester’s MAC).
+This reply allows the requester to map 192.168.148.146 → 74:12:b3:d0:0e:7b in its ARP cache, enabling direct communication at the data-link layer.

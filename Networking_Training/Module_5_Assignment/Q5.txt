@@ -1,0 +1,30 @@
+* Determining the new Subnet Mask
+Original Network: 192.168.1.0/24
+Default subnet mask: 255.255.255.0
+
+We need 2 extra bits for subnetting (because 2^2 = 4 subnets)
+New Subnet Mask: /26
+
+We add 2 bits to the network portion (24 + 2 = 26).
+In decimal, /26 is 255.255.255.192
+
+* Identify the Subnets and Ranges
+Each subnet has 64 IP addresses (2^(8−2) = 64).
+
+Subnet 1: 192.168.1.0/26
+Network Address: 192.168.1.0
+Usable Host Range: 192.168.1.1 – 192.168.1.62
+
+Subnet 2: 192.168.1.64/26
+Network Address: 192.168.1.64
+Usable Host Range: 192.168.1.65 – 192.168.1.126
+
+Subnet 3: 192.168.1.128/26
+Network Address: 192.168.1.128
+Usable Host Range: 192.168.1.129 – 192.168.1.190
+
+Subnet 4: 192.168.1.192/26
+Network Address: 192.168.1.192
+Usable Host Range: 192.168.1.193 – 192.168.1.254
+
+
