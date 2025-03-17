@@ -1,0 +1,42 @@
+* Configure Static IP Addresses on PCs
+
+1. Click on a PC1
+2. Go to the Desktop tab and then click on IP Configuration
+3. Set a Static IP Address
+4. Enter the IP address (e.g., 192.10.1.1) and Subnet Mask (255.255.255.0)
+5. Repeat for Other PCs
+
+
+
+* Modify MAC Addresses
+
+1. Access PC’s Config Tab
+2. Change the MAC Address (for example, change 00:0A:95:9D:68:16 to 00:0A:95:9D:68:FF)
+3. Save the Configuration
+4. Repeat this process for each PC where you want to modify the MAC address
+
+
+
+* Verification:
+
+C:\>ipconfig
+
+FastEthernet0 Connection:(default port)
+
+   Connection-specific DNS Suffix..: 
+   Link-local IPv6 Address.........: FE80::290:CFF:FEBA:A7BA
+   IPv6 Address....................: ::
+   IPv4 Address....................: 192.10.1.1
+   Subnet Mask.....................: 255.255.255.0
+   Default Gateway.................: ::
+                                     0.0.0.0
+
+Bluetooth Connection:
+
+   Connection-specific DNS Suffix..: 
+   Link-local IPv6 Address.........: ::
+   IPv6 Address....................: ::
+   IPv4 Address....................: 0.0.0.0
+   Subnet Mask.....................: 0.0.0.0
+   Default Gateway.................: ::
+                                     0.0.0.0

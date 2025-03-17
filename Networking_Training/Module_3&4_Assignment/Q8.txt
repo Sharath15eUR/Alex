@@ -1,0 +1,10 @@
+Below are my findings and a summary of what I observed:
+
+* DHCP automates IP configuration by exchanging DHCPDISCOVER, DHCPOFFER, DHCPREQUEST and DHCPACK messages.
+This process simplifies network management by dynamically assigning IP addresses and reusing them efficiently.
+
+* Ethernet frames contain fields such as source/destination MAC addresses, Ethertype, payload and FCS. By capturing packets with Wireshark, you can dissect each layer of the frame to verify correct encapsulation and identify potential errors.  Filtering and following streams are key techniques for targeted analysis.
+
+*Traceroute shows the path packets take to a destination by listing each hop’s IP address and response time.
+
+* Viewing the MAC Address Table in Linux-based Switches. The bridge fdb show dev br0 command reveals the MAC address table for a Linux bridge, showing which MAC addresses are learned on which ports. This information demonstrates how a switch dynamically learns and forwards traffic based on source MAC addresses.

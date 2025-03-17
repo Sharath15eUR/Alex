@@ -1,0 +1,32 @@
+1. Pinging two PCs to populate the MAC Address table:
+
+C:\>ping 192.10.1.2
+
+Pinging 192.10.1.2 with 32 bytes of data:
+
+Reply from 192.10.1.2: bytes=32 time=2ms TTL=128
+Reply from 192.10.1.2: bytes=32 time<1ms TTL=128
+Reply from 192.10.1.2: bytes=32 time<1ms TTL=128
+Reply from 192.10.1.2: bytes=32 time<1ms TTL=128
+
+Ping statistics for 192.10.1.2:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 2ms, Average = 0ms
+
+
+
+2. Checking the MAC Address table:
+
+S1#show mac address-table 
+
+          Mac Address Table
+-------------------------------------------
+
+Vlan    Mac Address       Type        Ports
+----    -----------       --------    -----
+
+   1    0090.0cba.a7ba    DYNAMIC     Fa0/1
+   1    00d0.ff82.6753    DYNAMIC     Fa0/2
+
+

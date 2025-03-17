@@ -1,0 +1,27 @@
+* Using Traceroute to troubleshoot:
+
+C:\>tracert 192.10.1.2
+
+Tracing route to 192.10.1.2 over a maximum of 30 hops: 
+
+  1   0 ms      0 ms      0 ms      192.10.1.2
+
+Trace complete.
+
+
+
+* Using ping to troubleshoot:
+
+C:\>ping 192.10.1.2
+
+Pinging 192.10.1.2 with 32 bytes of data:
+
+Reply from 192.10.1.2: bytes=32 time<1ms TTL=128
+Reply from 192.10.1.2: bytes=32 time<1ms TTL=128
+Reply from 192.10.1.2: bytes=32 time<1ms TTL=128
+Reply from 192.10.1.2: bytes=32 time<1ms TTL=128
+
+Ping statistics for 192.10.1.2:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 0ms, Average = 0ms

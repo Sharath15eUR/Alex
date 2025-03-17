@@ -1,0 +1,5 @@
+* The Linux kernel at its core, Ethernet support is provided by the network device drivers that register themselves with the kernel’s networking stack. Each Ethernet driver implements a set of standard operations (such as open, close, transmit, and receive) through a common structure known as net_device. This abstraction allows the kernel to manage various Ethernet devices uniformly, regardless of vendor-specific details.
+
+* When an Ethernet frame is transmitted or received, the kernel encapsulates it within an sk_buff (socket buffer) structure. This buffer contains metadata and payload data, which facilitates error checking, packet queuing and processing by higher-level protocols such as IPv4, IPv6 and ARP. The kernel’s network stack then processes these frames, applying protocol-specific logic and passing data up the stack for further handling by transport layer protocols like TCP and UDP.
+
+* In addition to handling data transfer, the Linux kernel provides mechanisms for dynamically configuring and monitoring Ethernet interfaces.

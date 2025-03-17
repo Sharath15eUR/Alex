@@ -1,0 +1,21 @@
+1. First, we need to activate the network interface. Suppose the interface is named eth0,
+
+ip link set dev eth0 up
+
+This command tells the kernel to enable eth0 for traffic
+
+2. We need to assign an IP address and subnet mask to the interface. For example, to configure the interface with IP address 192.168.1.10 on a 255.255.255.0 subnet mask,
+
+ip addr add 192.168.1.10/24 dev eth0
+
+This sets up the basic addressing for the LAN
+
+3. we need to add a default route pointing to our gateway. If our gateway’s IP is 192.168.1.1, we can configure it as follows:
+
+ip route add default via 192.168.1.1
+
+This tells the kernel that packets destined for addresses outside the local network should be sent to 192.168.1.1
+
+4. we can verify that the interface is up and configured correctly using:
+
+ip addr show dev eth0
