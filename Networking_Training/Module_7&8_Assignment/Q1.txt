@@ -1,0 +1,113 @@
+1. www.google.com
+
+PS C:\Users\Alex> Test-Connection www.google.com -Count 4
+
+Source        Destination     IPV4Address      IPV6Address                              Bytes    Time(ms)
+------        -----------     -----------      -----------                              -----    --------
+WORKSTATION   www.google.com  142.250.183.228  2404:6800:4007:82b::2004                 32       162
+WORKSTATION   www.google.com  142.250.183.228  2404:6800:4007:82b::2004                 32       119
+WORKSTATION   www.google.com  142.250.183.228  2404:6800:4007:82b::2004                 32       82
+WORKSTATION   www.google.com  142.250.183.228  2404:6800:4007:82b::2004                 32       85
+
+PS C:\Users\Alex> nslookup www.google.com
+Server:  UnKnown
+Address:  192.168.148.5
+
+Non-authoritative answer:
+Name:    www.google.com
+Addresses:  2404:6800:4007:824::2004
+          142.250.195.100
+
+
+2. www.facebook.com
+
+PS C:\Users\Alex> Test-Connection www.facebook.com -Count 4
+
+Source        Destination     IPV4Address      IPV6Address                              Bytes    Time(ms)
+------        -----------     -----------      -----------                              -----    --------
+WORKSTATION   www.facebook... 163.70.139.35    2a03:2880:f184:186:face:b00c:0:25de      32       129
+WORKSTATION   www.facebook... 163.70.139.35    2a03:2880:f184:186:face:b00c:0:25de      32       68
+WORKSTATION   www.facebook... 163.70.139.35    2a03:2880:f184:186:face:b00c:0:25de      32       91
+WORKSTATION   www.facebook... 163.70.139.35    2a03:2880:f184:186:face:b00c:0:25de      32       80
+
+PS C:\Users\Alex> nslookup www.facebook.com
+Server:  UnKnown
+Address:  192.168.148.5
+
+Non-authoritative answer:
+Name:    star-mini.c10r.facebook.com
+Addresses:  2a03:2880:f184:186:face:b00c:0:25de
+          163.70.139.35
+Aliases:  www.facebook.com
+
+
+3. www.amazon.com
+
+PS C:\Users\Alex> Test-Connection www.amazon.com -Count 4
+
+Source        Destination     IPV4Address      IPV6Address                              Bytes    Time(ms)
+------        -----------     -----------      -----------                              -----    --------
+WORKSTATION   www.amazon.com  18.67.156.60     2600:9000:2241:1e00:7:49a5:5fd4:b121     32       96
+WORKSTATION   www.amazon.com  18.67.156.60     2600:9000:2241:1e00:7:49a5:5fd4:b121     32       133
+WORKSTATION   www.amazon.com  18.67.156.60     2600:9000:2241:1e00:7:49a5:5fd4:b121     32       78
+WORKSTATION   www.amazon.com  18.67.156.60     2600:9000:2241:1e00:7:49a5:5fd4:b121     32       26
+
+PS C:\Users\Alex> nslookup www.amazon.com
+Server:  UnKnown
+Address:  192.168.148.5
+
+Non-authoritative answer:
+Name:    e15316.dsca.akamaiedge.net
+Addresses:  2600:140f:3:fa5::3bd4
+          2600:140f:3:f81::3bd4
+          23.206.206.111
+Aliases:  www.amazon.com
+          tp.47cf2c8c9-frontier.amazon.com
+          www.amazon.com.edgekey.net
+
+
+4. www.github.com
+
+PS C:\Users\Alex> Test-Connection www.github.com -Count 4
+
+Source        Destination     IPV4Address      IPV6Address                              Bytes    Time(ms)
+------        -----------     -----------      -----------                              -----    --------
+WORKSTATION   www.github.com  20.207.73.82                                              32       69
+WORKSTATION   www.github.com  20.207.73.82                                              32       76
+WORKSTATION   www.github.com  20.207.73.82                                              32       84
+WORKSTATION   www.github.com  20.207.73.82                                              32       148
+
+PS C:\Users\Alex> nslookup www.github.com
+Server:  UnKnown
+Address:  192.168.148.5
+
+Non-authoritative answer:
+Name:    github.com
+Address:  20.207.73.82
+Aliases:  www.github.com
+
+
+5. www.cisco.com
+
+PS C:\Users\Alex> Test-Connection www.cisco.com -Count 4
+
+Source        Destination     IPV4Address      IPV6Address                              Bytes    Time(ms)
+------        -----------     -----------      -----------                              -----    --------
+WORKSTATION   www.cisco.com   23.209.254.61    2600:140f:3:f93::b33                     32       98
+WORKSTATION   www.cisco.com   23.209.254.61    2600:140f:3:f93::b33                     32       179
+WORKSTATION   www.cisco.com   23.209.254.61    2600:140f:3:f93::b33                     32       280
+WORKSTATION   www.cisco.com   23.209.254.61    2600:140f:3:f93::b33                     32       181
+
+PS C:\Users\Alex> nslookup www.cisco.com
+Server:  UnKnown
+Address:  192.168.148.5
+
+Non-authoritative answer:
+Name:    e2867.dsca.akamaiedge.net
+Addresses:  2600:140f:3:f95::b33
+          2600:140f:3:f93::b33
+          23.220.238.70
+Aliases:  www.cisco.com
+          www.cisco.com.akadns.net
+          wwwds.cisco.com.edgekey.net
+          wwwds.cisco.com.edgekey.net.globalredir.akadns.net

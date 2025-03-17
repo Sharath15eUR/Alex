@@ -1,0 +1,122 @@
+* On S1 switch:
+
+S1> enable
+S1# configure terminal
+
+S1(config)# vlan 10
+S1(config-vlan)# name VLAN10
+S1(config-vlan)# exit
+
+S1(config)# vlan 20
+S1(config-vlan)# name VLAN20
+S1(config-vlan)# exit
+
+S1(config)# vlan 30
+S1(config-vlan)# name VLAN30
+S1(config-vlan)# exit
+
+S1(config)# interface range g0/1 - 2
+S1(config-if-range)# switchport mode trunk
+S1(config-if-range)# switchport trunk allowed vlan 10,20,30
+S1(config-if-range)# exit
+
+
+
+* On S2 switch:
+
+S2> enable
+S2# configure terminal
+
+S2(config)# vlan 10
+S2(config-vlan)# name VLAN10
+S2(config-vlan)# exit
+
+S2(config)# vlan 20
+S2(config-vlan)# name VLAN20
+S2(config-vlan)# exit
+
+S2(config)# vlan 30
+S2(config-vlan)# name VLAN30
+S2(config-vlan)# exit
+
+S2(config)# interface f0/11
+S2(config-if)# switchport mode access
+S2(config-if)# switchport access vlan 10
+S2(config-if)# exit
+S2(config)# interface f0/18
+S2(config-if)# switchport mode access
+S2(config-if)# switchport access vlan 20
+S2(config-if)# exit
+S2(config)# interface f0/6
+S2(config-if)# switchport mode access
+S2(config-if)# switchport access vlan 30
+S2(config-if)# exit
+
+S2(config)# interface f0/11
+S2(config-if)# switchport mode trunk
+S2(config-if)# switchport trunk allowed vlan 10,20,30
+S2(config-if)# exit
+
+
+
+* On S3 switch:
+
+S3> enable
+S3# configure terminal
+
+S3(config)# vlan 10
+S3(config-vlan)# name VLAN10
+S3(config-vlan)# exit
+
+S3(config)# vlan 20
+S3(config-vlan)# name VLAN20
+S3(config-vlan)# exit
+
+S3(config)# vlan 30
+S3(config-vlan)# name VLAN30
+S3(config-vlan)# exit
+
+S3(config)# interface f0/11
+S3(config-if)# switchport mode access
+S3(config-if)# switchport access vlan 10
+S3(config-if)# exit
+S3(config)# interface f0/18
+S3(config-if)# switchport mode access
+S3(config-if)# switchport access vlan 20
+S3(config-if)# exit
+S3(config)# interface f0/6
+S3(config-if)# switchport mode access
+S3(config-if)# switchport access vlan 30
+S3(config-if)# exit
+
+S3(config)# interface f0/11
+S3(config-if)# switchport mode trunk
+S3(config-if)# switchport trunk allowed vlan 10,20,30
+S3(config-if)# exit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

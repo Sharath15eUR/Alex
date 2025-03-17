@@ -1,0 +1,290 @@
+1. Analyzing DNS Traffic
+
+* DNS Query:
+
+Frame 114: 81 bytes on wire (648 bits), 81 bytes captured (648 bits) on interface \Device\NPF_{9943B588-A2BC-4207-B340-64D33D58B37D}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{9943B588-A2BC-4207-B340-64D33D58B37D})
+        Interface name: \Device\NPF_{9943B588-A2BC-4207-B340-64D33D58B37D}
+        Interface description: Wi-Fi
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Mar 17, 2025 07:16:17.012445000 India Standard Time
+    UTC Arrival Time: Mar 17, 2025 01:46:17.012445000 UTC
+    Epoch Arrival Time: 1742175977.012445000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.001113000 seconds]
+    [Time delta from previous displayed frame: 0.001113000 seconds]
+    [Time since reference or first frame: 2.241267000 seconds]
+    Frame Number: 114
+    Frame Length: 81 bytes (648 bits)
+    Capture Length: 81 bytes (648 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:udp:dns]
+    [Coloring Rule Name: UDP]
+    [Coloring Rule String: udp]
+
+
+Domain Name System (query)
+    Transaction ID: 0xc4ed
+    Flags: 0x0100 Standard query
+        0... .... .... .... = Response: Message is a query
+        .000 0... .... .... = Opcode: Standard query (0)
+        .... ..0. .... .... = Truncated: Message is not truncated
+        .... ...1 .... .... = Recursion desired: Do query recursively
+        .... .... .0.. .... = Z: reserved (0)
+        .... .... ...0 .... = Non-authenticated data: Unacceptable
+    Questions: 1
+    Answer RRs: 0
+    Authority RRs: 0
+    Additional RRs: 0
+    Queries
+        update.googleapis.com: type A, class IN
+    [Response In: 120]
+
+* DNS Response:
+
+Frame 6205: 261 bytes on wire (2088 bits), 261 bytes captured (2088 bits) on interface \Device\NPF_{9943B588-A2BC-4207-B340-64D33D58B37D}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{9943B588-A2BC-4207-B340-64D33D58B37D})
+        Interface name: \Device\NPF_{9943B588-A2BC-4207-B340-64D33D58B37D}
+        Interface description: Wi-Fi
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Mar 17, 2025 07:16:44.986953000 India Standard Time
+    UTC Arrival Time: Mar 17, 2025 01:46:44.986953000 UTC
+    Epoch Arrival Time: 1742176004.986953000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.000740000 seconds]
+    [Time delta from previous displayed frame: 0.022298000 seconds]
+    [Time since reference or first frame: 30.215775000 seconds]
+    Frame Number: 6205
+    Frame Length: 261 bytes (2088 bits)
+    Capture Length: 261 bytes (2088 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:udp:dns]
+    [Coloring Rule Name: UDP]
+    [Coloring Rule String: udp]
+
+
+Domain Name System (response)
+    Transaction ID: 0x00bd
+    Flags: 0x8180 Standard query response, No error
+        1... .... .... .... = Response: Message is a response
+        .000 0... .... .... = Opcode: Standard query (0)
+        .... .0.. .... .... = Authoritative: Server is not an authority for domain
+        .... ..0. .... .... = Truncated: Message is not truncated
+        .... ...1 .... .... = Recursion desired: Do query recursively
+        .... .... 1... .... = Recursion available: Server can do recursive queries
+        .... .... .0.. .... = Z: reserved (0)
+        .... .... ..0. .... = Answer authenticated: Answer/authority portion was not authenticated by the server
+        .... .... ...0 .... = Non-authenticated data: Unacceptable
+        .... .... .... 0000 = Reply code: No error (0)
+    Questions: 1
+    Answer RRs: 2
+    Authority RRs: 4
+    Additional RRs: 0
+    Queries
+        c.clicktale.net: type A, class IN
+    Answers
+    Authoritative nameservers
+    [Request In: 6144]
+    [Time: 0.028689000 seconds]
+
+
+
+2. Analyzing TCP Traffic:
+
+* Frame 5962:
+
+Frame 5962: 113 bytes on wire (904 bits), 113 bytes captured (904 bits) on interface \Device\NPF_{9943B588-A2BC-4207-B340-64D33D58B37D}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{9943B588-A2BC-4207-B340-64D33D58B37D})
+        Interface name: \Device\NPF_{9943B588-A2BC-4207-B340-64D33D58B37D}
+        Interface description: Wi-Fi
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Mar 17, 2025 07:16:44.801892000 India Standard Time
+    UTC Arrival Time: Mar 17, 2025 01:46:44.801892000 UTC
+    Epoch Arrival Time: 1742176004.801892000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.000057000 seconds]
+    [Time delta from previous displayed frame: 0.000057000 seconds]
+    [Time since reference or first frame: 30.030714000 seconds]
+    Frame Number: 5962
+    Frame Length: 113 bytes (904 bits)
+    Capture Length: 113 bytes (904 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ipv6:tcp:tls]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+
+
+Transmission Control Protocol, Src Port: 443, Dst Port: 50772, Seq: 7215, Ack: 3124, Len: 39
+    Source Port: 443
+    Destination Port: 50772
+    [Stream index: 211]
+    [Stream Packet Number: 24]
+    [Conversation completeness: Complete, WITH_DATA (31)]
+        ..0. .... = RST: Absent
+        ...1 .... = FIN: Present
+        .... 1... = Data: Present
+        .... .1.. = ACK: Present
+        .... ..1. = SYN-ACK: Present
+        .... ...1 = SYN: Present
+        [Completeness Flags: ·FDASS]
+    [TCP Segment Len: 39]
+    Sequence Number: 7215    (relative sequence number)
+    Sequence Number (raw): 183441120
+    [Next Sequence Number: 7254    (relative sequence number)]
+    Acknowledgment Number: 3124    (relative ack number)
+    Acknowledgment number (raw): 3997121866
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 1041
+    [Calculated window size: 266496]
+    [Window size scaling factor: 256]
+    Checksum: 0x1f0a [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.269146000 seconds]
+        [Time since previous frame in this TCP stream: 0.000057000 seconds]
+    [SEQ/ACK analysis]
+        [iRTT: 0.072445000 seconds]
+        [Bytes in flight: 39]
+        [Bytes sent since last PSH flag: 39]
+    TCP payload (39 bytes)
+
+* Frame 5963 (ACK to 5962):
+
+Frame 5963: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface \Device\NPF_{9943B588-A2BC-4207-B340-64D33D58B37D}, id 0
+    Section number: 1
+    Interface id: 0 (\Device\NPF_{9943B588-A2BC-4207-B340-64D33D58B37D})
+        Interface name: \Device\NPF_{9943B588-A2BC-4207-B340-64D33D58B37D}
+        Interface description: Wi-Fi
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Mar 17, 2025 07:16:44.801915000 India Standard Time
+    UTC Arrival Time: Mar 17, 2025 01:46:44.801915000 UTC
+    Epoch Arrival Time: 1742176004.801915000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.000023000 seconds]
+    [Time delta from previous displayed frame: 0.000023000 seconds]
+    [Time since reference or first frame: 30.030737000 seconds]
+    Frame Number: 5963
+    Frame Length: 74 bytes (592 bits)
+    Capture Length: 74 bytes (592 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ipv6:tcp]
+    [Coloring Rule Name: TCP]
+    [Coloring Rule String: tcp]
+
+
+Transmission Control Protocol, Src Port: 50772, Dst Port: 443, Seq: 3155, Ack: 7254, Len: 0
+    Source Port: 50772
+    Destination Port: 443
+    [Stream index: 211]
+    [Stream Packet Number: 25]
+    [Conversation completeness: Complete, WITH_DATA (31)]
+        ..0. .... = RST: Absent
+        ...1 .... = FIN: Present
+        .... 1... = Data: Present
+        .... .1.. = ACK: Present
+        .... ..1. = SYN-ACK: Present
+        .... ...1 = SYN: Present
+        [Completeness Flags: ·FDASS]
+    [TCP Segment Len: 0]
+    Sequence Number: 3155    (relative sequence number)
+    Sequence Number (raw): 3997121897
+    [Next Sequence Number: 3155    (relative sequence number)]
+    Acknowledgment Number: 7254    (relative ack number)
+    Acknowledgment number (raw): 183441159
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 0... = Push: Not set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······A····]
+    Window: 255
+    [Calculated window size: 65280]
+    [Window size scaling factor: 256]
+    Checksum: 0x2941 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.269169000 seconds]
+        [Time since previous frame in this TCP stream: 0.000023000 seconds]
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 5962]
+        [The RTT to ACK the segment was: 0.000023000 seconds]
+        [iRTT: 0.072445000 seconds]
+
+
+
+3. Analyzing UDP Traffic:
+
+User Datagram Protocol, Src Port: 53, Dst Port: 57330
+    Source Port: 53
+    Destination Port: 57330
+    Length: 78
+    Checksum: 0xdab6 [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 21]
+    [Stream Packet Number: 8]
+    [Timestamps]
+        [Time since first frame: 1.044842000 seconds]
+        [Time since previous frame: 0.075671000 seconds]
+    UDP payload (70 bytes)
+Domain Name System (response)
+
+* UDP Stream:
+
+[CLIENT]
+.7...........j.6sc.co..... 
+[SERVER]
+.7...........j.6sc.co..............D...j2.6sc.co.edgekey.net..&......D....e212585.b
+akamaiedge.8.Q.........1.n0b.S
+hostmaster.akamai.com.g...................
+[CLIENT]
+.............c.6sc.co.....
+[SERVER]
+.............c.6sc.co..............q...c2.6sc.co.edgekey.net..&......N....e212585.b
+akamaiedge.8.Q.........1.n0b.S
+hostmaster.akamai.com.g...................
+[CLIENT]
+h...........	analytics.google.com.....
+[SERVER]
+h...........	analytics.google.com..............X..$.h.@..)...... .
+[CLIENT]
+.R...........www.google-analytics.com.....
+[SERVER]
+.R...........www.google-analytics.com.................$.h.@.."...... .
+[CLIENT]
+.............c	clicktale.net.....
+
+5 client pkts, 4 server pkts, 8 turns.
+
+
+
+
+
+

@@ -1,0 +1,39 @@
+C:\Users\Alex>tracert www.cisco.com
+
+Tracing route to e2867.dsca.akamaiedge.net [2600:140f:3:f95::b33]
+over a maximum of 30 hops:
+
+  1     4 ms     2 ms     5 ms  2401:4900:9160:406f::a8
+  2     *        *        *     Request timed out.
+  3     *        *        *     Request timed out.
+  4     *        *        *     Request timed out.
+  5     *        *        *     Request timed out.
+  6     *        *        *     Request timed out.
+  7     *       51 ms   100 ms  2404:a800:3a00:1::601
+  8   104 ms   101 ms   101 ms  2404:a800::31
+  9     *        *        *     Request timed out.
+ 10     *        *        *     Request timed out.
+ 11     *        *        *     Request timed out.
+ 12     *        *        *     Request timed out.
+ 13     *        *        *     Request timed out.
+ 14     *        *        *     Request timed out.
+ 15     *        *        *     Request timed out.
+ 16     *        *        *     Request timed out.
+ 17     *        *        *     Request timed out.
+ 18     *        *        *     Request timed out.
+ 19     *     General failure.
+
+
+* Analyzing Parameters:
+
+Hop Number --> Each row is one “hop” (a router or gateway)
+Three Time Columns (ms) --> Round trip time (RTT) of three packets sent to each hop
+IP Address --> Shows either the name or IP of the router
+Final Hop --> Destination reached
+
+* Different options:
+
+-d	     :	Do not resolve addresses to hostnames (faster)
+-h <hops>    :	Maximum number of hops to search for the target
+-w <timeout> :	Wait time in milliseconds for each reply
+-4 or -6     :	Force using IPv4 or IPv6
