@@ -1,0 +1,22 @@
+1) 192.168.10.5
+Class --> Class C (since its first octet is 192, which falls in the 192–223 range)
+Address Type --> Private (the 192.168.0.0/16 block is reserved for private networks)
+
+2) 172.20.15.1
+Class --> Class B (its first octet is 172, and since 172.16.0.0 to 172.31.255.255 is designated for private networks)
+Address Type --> Private
+
+3) 8.8.8.8
+Class --> Class A (first octet is 8, which is in the range 1–126)
+Address Type --> Public (8.8.8.8 is a well-known public DNS server operated by Google)
+
+
+Q. How NAT (Network Address Translation) Handles Private IPs while accessing the internet?
+
+When a device with a private IP address needs to access the internet, it must pass through a router that uses NAT.
+
+1. The private IP device sends a request to access a public website (eg. google.com)
+2. The router replaces the private IP address with its public IP address (assigned by the ISP)
+3. The request reaches the destination (google's server)
+4. The server replies to the router’s public IP
+5. The router then translates it back to the correct private IP and forwards it to the originating device

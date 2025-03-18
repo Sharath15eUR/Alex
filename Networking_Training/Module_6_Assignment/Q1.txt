@@ -1,0 +1,9 @@
+Q. Why is ARP Important in Packet Forwarding?
+
+When a device wants to send a packet to another device or to a router it ;
+1. Knows the IP address, but not the MAC address
+2. Uses ARP to find the MAC address corresponding to that IP address
+3. Then forwards the packet using the destination MAC address
+
+Without ARP, devices wouldn't be able to communicate within a LAN or send packets to a router.
+
