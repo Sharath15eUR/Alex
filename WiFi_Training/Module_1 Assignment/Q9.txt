@@ -1,0 +1,12 @@
+There are several types of Wi-Fi internet connectivity backhaul:
+1. Wired
+2. Wireless
+3. Hybrid
+
+* Wired backhaul uses physical media like Ethernet cables, fiber-optic links or even coaxial cables, offering high reliability and bandwidth. 
+
+* Wireless backhaul, employs radio frequency links—such as 5 GHz point-to-point bridges, microwave links or even cellular connections making it ideal when laying cables is impractical. 
+
+* A hybrid approach combines both wired and wireless elements to extend network coverage and improve flexibility.
+
+At my home, we use a hybrid setup where the primary backhaul is a fiber-optic connection provided by our ISP, ensuring high-speed and low-latency internet. To extend coverage into the backyard and other remote areas, we’ve added a wireless backhaul using a dedicated 5 GHz access point configured in bridge mode.

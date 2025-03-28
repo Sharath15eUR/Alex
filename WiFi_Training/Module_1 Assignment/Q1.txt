@@ -1,0 +1,12 @@
+* Wi-Fi fits in both the physical and data link layers of the OSI model. 
+* The physical layer handles the actual radio transmission and reception of signals, dealing with aspects like modulation, frequency and power
+* While the data link layer, particularly through the MAC sublayer, is responsible for controlling access to the shared wireless medium and managing how data is framed and error-checked before it's sent or after it's received.
+
+In my view, this dual-layer approach is what makes Wi-Fi so versatile and robust for wireless networking.
+
+
+
+
+
+
+

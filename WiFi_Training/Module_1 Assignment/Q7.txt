@@ -1,0 +1,5 @@
+* In my case, when connected to the 2.4 GHz network, my laptop reported a more stable connection over a wider area but with a slower data rate compared to the 5 GHz network. 
+
+* In contrast, the 5 GHz connection, while delivering faster speeds and lower interference, showed a drop in signal strength when moving farther away from the hotspot. 
+
+This practical test helps us understand why many networks today offer dual-band support to balance the benefits of both frequency bands based on the environment and specific use cases.

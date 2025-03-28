@@ -1,0 +1,10 @@
+Different Wi-Fi Topologies are as follows:
+ 
+1. Infrastructure Mode:
+Client devices connect to a central access point (AP) which in turn connects to a wired network. This is the most common topology used in homes, offices and public hotspots.
+
+2. Ad-Hoc Mode (Peer-to-Peer):
+Devices communicate directly with one another without an AP. This setup is useful for temporary networks, small group file sharing or gaming scenarios where a quick, direct connection is needed.
+
+3. Mesh Networking:
+Multiple nodes connect in a decentralized manner to cover a wide area. Mesh networks are ideal for large campuses, community networks or smart home systems where seamless roaming and robust coverage are required.

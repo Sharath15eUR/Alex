@@ -1,0 +1,3 @@
+* 802.11a operates in the 5 GHz frequency band and uses OFDM modulation, which allows for higher data rates up to 54 Mbps but typically with a shorter range compared to its counterpart. 
+
+* 802.11b operates in the 2.4 GHz band using DSSS modulation, providing lower data rates of up to 11 Mbps; however, it tends to have a longer range, albeit with more susceptibility to interference from other devices operating in the same frequency band.

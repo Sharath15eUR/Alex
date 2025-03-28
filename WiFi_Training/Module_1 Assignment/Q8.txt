@@ -1,0 +1,5 @@
+* IEEE is a standards development organization responsible for creating and maintaining the technical specifications that underlie technologies such as Wi-Fi (802.11 family)
+
+* Whereas the Wi-Fi Alliance (WFA) is an industry consortium that tests and certifies products for compliance with these standards, ensuring interoperability and a consistent user experience across different vendors. 
+
+Essentially, while IEEE lays down the rules and technical details, the WFA acts as the gatekeeper, verifying that devices meet those guidelines and can work together seamlessly in a network.

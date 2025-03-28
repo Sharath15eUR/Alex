@@ -1,0 +1,5 @@
+Every day I use several Wi-Fi enabled devices, each supporting different Wi-Fi generations based on their specific wireless capabilities. 
+
+* My smartphone is equipped with Wi-Fi 6 (802.11ax), which delivers higher throughput, improved efficiency in dense environments, and advanced features like MU-MIMO and OFDMA for smoother streaming and gaming. 
+* My laptop, on the other hand, operates on Wi-Fi 5 (802.11ac), providing strong speeds and enhanced reliability with beamforming and wider channel bandwidth, ideal for productivity and multimedia tasks. 
+* My smart home devices, such as my smart speaker, typically rely on Wi-Fi 4 (802.11n), which, while not as fast as the later generations, still offers solid connectivity and sufficient range for home automation.

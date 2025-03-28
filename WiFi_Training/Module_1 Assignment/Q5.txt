@@ -1,0 +1,3 @@
+* In bridge mode, the device connects two separate network segments (typically a wired and a wireless segment) to function as a single network, allowing devices on both segments to communicate seamlessly. 
+
+* In Repeater mode, on the other hand, it is designed to extend the coverage of an existing wireless network by receiving the Wi-Fi signal and retransmitting it, which can help cover dead zones but may reduce overall bandwidth due to the signal rebroadcast process.

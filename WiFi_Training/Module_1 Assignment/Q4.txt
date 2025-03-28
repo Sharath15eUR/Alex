@@ -1,0 +1,7 @@
+A Wi-Fi access point acts as a bridge between wireless devices and a wired network, performing a range of essential functions :
+
+1. It transmits and receives radio signals to enable wireless connectivity
+2. It manages client associations and handoffs 
+3. It ensures secure communication through authentication and encryption protocols like WPA2 or WPA3 
+4. It handles network traffic routing, assigns IP addresses via DHCP, selects optimal channels to reduce interference, and manages bandwidth allocation to maintain efficient data flow
+5. It creates a centralized environment that allows multiple devices to connect seamlessly while maintaining network performance and security

@@ -1,0 +1,2 @@
+* BSS (Basic Service Set) is essentially the basic building block of a Wi-Fi network. It consists of an access point and the associated wireless devices that connects to it.
+* ESS (Extended Service Set) builds on that concept by linking multiple BSSs together to create a broader network, allowing seamless connectivity across a larger area like an office or campus. This setup lets devices roam freely between different access points while staying connected.
