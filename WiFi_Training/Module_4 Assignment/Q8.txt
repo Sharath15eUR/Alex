@@ -1,0 +1,8 @@
+In IEEE 802.11 (Wi-Fi), the MAC layer uses contention-based and contention-free methods to manage access to the medium.
+
+Main MAC Methodologies:
+
+1. Distributed Coordination Function (DCF) – Contention-Based
+2. Point Coordination Function (PCF) – Contention-Free
+3. Hybrid Coordination Function (HCF) – Used in QoS (802.11e)
+4. OFDMA-Based Access (Wi-Fi 6 / 802.11ax)

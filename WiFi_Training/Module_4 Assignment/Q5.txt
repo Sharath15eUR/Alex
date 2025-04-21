@@ -1,0 +1,8 @@
+The client association process in a Wi-Fi (IEEE 802.11) network is the sequence of steps a wireless device (station) follows to connect to an Access Point (AP) and become part of the wireless network. 
+
+1. Scanning: Before association, the client performs either passive or active scanning to discover available networks. It collects information like SSID, signal strength and security protocols from nearby Access Points.
+
+2. Authentication: This is the first formal step in establishing a connection. The client sends an authentication request to the selected AP. If authentication is successful, the client moves to the next step.
+
+3. Association: Once authenticated, the client sends an association request frame to the AP. This frame includes information such as supported data rates and capabilities. The AP responds with an association response frame indicating success or failure. If successful, the AP allocates resources (like an Association ID) for the client and the client is now considered connected to the network.
+

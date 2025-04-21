@@ -1,0 +1,14 @@
+* How Block ACK Works:
+
+1. The sender and receiver first agree to use Block ACK through an initial setup (Block ACK Request/Response).
+2. The sender transmits a burst of data frames (called an A-MPDU – Aggregated MAC Protocol Data Unit).
+3. Instead of sending an ACK after each frame, the receiver sends a Block ACK frame that includes a bitmap indicating which frames were successfully received and which were not.
+4. The sender can then retransmit only the missing frames, improving efficiency.
+
+* Advantages of Block ACK:
+
+-> Improved Throughput
+-> Lower Latency
+-> Better Channel Utilization
+-> Reduced Control Overhead
+

@@ -1,0 +1,26 @@
+The EAPOL 4-way handshake is a critical process used in Wi-Fi networks secured with WPA2 or WPA3-PSK/Enterprise. It occurs after a wireless client (supplicant) successfully associates with an Access Point (authenticator).
+
+Keys Involved:
+
+* PMK (Pairwise Master Key): A key derived from either;
+1.The Pre-Shared Key (PSK) in WPA2/WPA3-Personal.
+2. The EAP process in WPA2/WPA3-Enterprise.
+* PTK (Pairwise Transient Key): Derived during the handshake, unique to each session and client.
+* GTK (Group Temporal Key): Used for broadcast/multicast traffic.
+
+Steps:
+
+* Message 1 – AP to Client
+What Happens:
+AP sends its own nonce (ANonce) to the client. This message also includes WPA/RSN information.
+* Message 2 – Client to AP
+What Happens:
+Client generates its own nonce (SNonce).Using PMK, ANonce, SNonce, and both MAC addresses, it derives the PTK. Sends SNonce and a Message Integrity Code (MIC) back to AP.
+* Message 3 – AP to Client
+What Happens:
+AP derives the PTK using known values (PMK, ANonce, SNonce, MACs). Verifies the MIC sent by the client. Sends Group Temporal Key (GTK) encrypted with the PTK. Includes its own MIC for verification.
+* Message 4 – Client to AP
+What Happens:
+Client installs the PTK and GTK. Sends an acknowledgment to AP.
+
+

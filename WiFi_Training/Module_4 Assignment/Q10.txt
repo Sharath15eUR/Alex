@@ -1,0 +1,8 @@
+These are aggregation mechanisms used in IEEE 802.11 standards (like 802.11n and later) to boost efficiency and throughput in wireless networks by reducing protocol overhead.
+
+1. A-MSDU (Aggregated MAC Service Data Unit) : A-MSDU aggregates multiple MSDUs (MAC Service Data Units) into a single MPDU (MAC Protocol Data Unit) payload.
+
+2. A-MPDU (Aggregated MAC Protocol Data Unit) : A-MPDU aggregates multiple MPDUs into a single PHY layer frame.
+
+3. A-MSDU in A-MPDU : This is a nested aggregation where each MPDU inside an A-MPDU can itself carry an A-MSDU.
+

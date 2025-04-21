@@ -1,0 +1,10 @@
+1. Passive Scanning
+In passive scanning, the wireless device listens silently for beacon frames broadcasted by Access Points.
+* How it works:
+The device switches through different channels one by one. On each channel, it listens for beacon frames which APs send periodically (typically every 100 ms).Each beacon frame contains information such as SSID, supported rates, timestamp, capabilities and security settings. The device collects this information and builds a list of available networks.
+
+ 2. Active Scanning
+In active scanning, the station actively sends probe request frames to discover APs.
+* How it works:
+The station goes through channels and sends probe request frames (can include specific SSID or be set to broadcast). APs that receive this probe request respond with probe response frames. These responses contain the same kind of information as beacon frames (SSID, capabilities, etc.). The station collects the responses and builds a list of available networks.
+

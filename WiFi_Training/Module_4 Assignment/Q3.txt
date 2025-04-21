@@ -1,0 +1,34 @@
+1. Management Plane Functions
+These functions are responsible for establishing, maintaining and terminating connections between devices.
+
+* Beacon generation: APs periodically send beacons to announce their presence and provide network information (SSID, supported rates, etc.).
+* Authentication: Initial process where devices verify each other before joining a network.
+* Association/Reassociation: Helps devices join a network (association) or move to a different AP within the same network (reassociation).
+* Deauthentication/Disassociation: Ends the authenticated or associated state of a station.
+* Probe Request/Response: Stations send probe requests to find available networks; APs reply with probe responses.
+* Timing synchronization: Devices synchronize their clocks using beacon frames.
+* Capability negotiation: Devices exchange capabilities such as supported data rates, encryption types, etc.
+* Security management: Includes the handling of encryption keys and security policy enforcement.
+* Power management coordination: Allows stations to enter sleep modes and buffer traffic during that time.
+
+
+2. Control Plane Functions
+Control frames support the delivery and coordination of data and management frames.
+
+* RTS (Request to Send)/CTS (Clear to Send): Used to avoid collisions in environments with hidden nodes.
+* ACK (Acknowledgement): Confirms the successful receipt of frames.
+* PS-Poll (Power Save Poll): Allows stations in power-saving mode to request buffered data from the AP.
+* Block ACK and Block ACK Request: Used to acknowledge multiple frames in a burst transmission (e.g., in high-throughput networks).
+* Contention window management: Manages how devices wait before accessing the channel to avoid collisions.
+
+
+3. Data Plane Functions
+These functions are responsible for transferring actual user data between devices.
+
+* Frame encapsulation/decapsulation: Adds/removes MAC headers to/from data coming from upper layers.
+* MAC addressing: Uses source and destination MAC addresses to identify devices.
+* Fragmentation and reassembly: Splits large frames into smaller ones and reassembles them at the receiver.
+* Error detection: Uses Frame Check Sequence (FCS) to detect errors in frames.
+* Data transmission and retransmission: Handles sending data and retrying when acknowledgements are not received.
+* Traffic prioritization (QoS): Supports prioritization of data streams (e.g., voice over video) using Enhanced Distributed Channel Access (EDCA).
+* Aggregation (A-MSDU/A-MPDU): Combines multiple frames for efficient transmission in modern Wi-Fi versions.

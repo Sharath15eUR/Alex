@@ -1,0 +1,6 @@
+* The MAC (Media Access Control) layer plays a crucial role in the Data Link Layer of the OSI model. 
+
+* Significance:
+
+1. It is responsible for controlling how devices in a network gain access to the medium and permission to transmit data. This layer ensures efficient and collision-free communication over the physical medium, especially in shared networks like Ethernet or Wi-Fi. 
+2. It handles tasks such as addressing (using MAC addresses), frame delimiting, error detection, and managing access control mechanisms like CSMA/CD (Carrier Sense Multiple Access with Collision Detection) in wired networks or CSMA/CA (Collision Avoidance) in wireless systems.

@@ -1,0 +1,16 @@
+1. Frame Control (2 bytes): This field contains control information about the frame type and its subtype (like management or control or data), protocol version, whether the frame is a retransmission and power management indicators. It helps devices interpret the purpose and status of the frame.
+
+2. Duration ID (2 bytes): It indicates how long the channel will be reserved for this frame and its acknowledgment. It helps in implementing the virtual carrier sensing mechanism using the Network Allocation Vector (NAV).
+
+* Address Fields (6 bytes each):
+
+-> Address 1 (Receiver Address): The MAC address of the device that should receive the frame.
+-> Address 2 (Transmitter Address): The MAC address of the device sending the frame.
+-> Address 3 (BSSID or Destination Address): It can be the MAC address of the access point or final destination depending on the frame type.
+-> Address 4 (optional): Used in wireless distribution systems (WDS) where frames are relayed between access points.
+
+3. Sequence Control (2 bytes): This field contains a sequence number and fragment number to help the receiver reassemble frames in order and detect duplicates.
+
+4. QoS Control (2 bytes, optional): Present in Quality of Service (QoS) data frames, it provides priority levels and information for traffic classification.
+
+5. HT Control (4 bytes, optional): Used in high throughput (802.11n and above) networks to assist with control functions in advanced features like beamforming.

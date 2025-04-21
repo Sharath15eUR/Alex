@@ -1,0 +1,8 @@
+The Power Saving Scheme in the MAC layer of Wi-Fi (IEEE 802.11) is designed to help wireless devices (especially battery-powered ones like mobile phones and laptops) conserve energy by intelligently managing when the wireless radio should be active or asleep.
+
+Types of Power Saving Mechanisms:
+
+1. Legacy Power Saving Mode (802.11 Standard)
+2. Automatic Power Save Delivery (APSD) – 802.11e
+3. Power Save Multi-Poll (PSMP) – 802.11n
+4. Target Wake Time (TWT) – 802.11ax (Wi-Fi 6)
