@@ -1,0 +1,16 @@
+1) Lightweight APs:
+
+Lightweight Access Points depend on an on-premises Wireless LAN Controller (WLC) to function.
+The AP handles basic functions like sending/receiving wireless signals, while the WLC centrally manages authentication, security policies, RF management, roaming decisions and configurations.
+Communication between the AP and controller typically uses the CAPWAP protocol.
+If the connection to the controller fails, many lightweight APs either go into a limited failover mode or stop servicing clients completely.
+Deployment Scope: Ideal for enterprise environments where the WLC can be physically close to the APs or within the same corporate network.
+
+
+2) Cloud-based APs:
+
+Cloud-based APs are designed to be managed directly from a cloud controller platform (hosted by the vendor like Cisco Meraki, Aruba Central, Ruckus Cloud, etc.)
+No physical on-site controller is needed; the cloud acts as the controller.
+APs connect securely over the Internet to the cloud for management, configuration, firmware updates, monitoring and analytics.
+Even if the Internet link fails, most cloud-managed APs continue to serve clients (at least for local traffic) and synchronize with the cloud once the connection is restored.
+Deployment Scope: Ideal for distributed sites, branch offices, or businesses without a strong IT presence on-site because it provides easy remote management.

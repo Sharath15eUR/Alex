@@ -1,0 +1,5 @@
+CAPWAP fits at Layer 2 and Layer 3 of the OSI model. It mainly operates at the network layer (Layer 3) because it uses IP and UDP for transporting messages between the AP and the controller. However, CAPWAP can also work over Layer 2 if the AP and controller are on the same broadcast domain without an IP network in between. In most modern deployments, CAPWAP is implemented over Layer 3 to allow APs and controllers to communicate across different subnets and large networks.
+
+In CAPWAP, there are two tunnels established between the AP and the Controller:
+1. Control Tunnel
+2. Data Tunnel

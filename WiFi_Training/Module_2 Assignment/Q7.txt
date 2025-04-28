@@ -1,0 +1,5 @@
+FlexConnect mode allows Access Points (APs) to locally switch traffic — meaning, even though they are controlled by a remote WLC over the WAN, the APs can still directly forward user traffic to the local LAN without sending all data packets across the WAN to the controller.
+
+This is crucial because it saves WAN bandwidth, reduces latency and avoids dependency on WAN reliability for local communication.
+
+In normal (centralized) mode, all user traffic (even for local users) would have to travel to the WLC and back, which could cause high delays and WAN congestion. FlexConnect avoids this problem.

@@ -1,0 +1,9 @@
+--> In Local Mode, the AP does not handle client traffic by itself. Instead, it forwards all client data frames and management frames (like authentication, association, etc.) to the WLC through a CAPWAP tunnel.
+
+--> If the WLC goes down, the AP loses its CAPWAP control and data tunnels.
+
+--> When the tunnels are lost, the AP is unable to authenticate new clients, unable to forward existing client traffic, and cannot manage session maintenance.
+
+--> As a result, the client will get disconnected from the wireless network within seconds.
+
+--> The AP itself may enter a "Discovery" or "Fallback" state, trying to find another WLC (if redundancy is configured).

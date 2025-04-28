@@ -1,0 +1,13 @@
+1. Configuration and Management Complexity
+Each AP must be configured manually one by one (SSID settings, security policies, VLANs, etc.).
+Any change (like updating passwords or enabling a new SSID) must be manually done on every AP, making network administration extremely time-consuming and error-prone.
+Keeping all APs consistent in their configuration is very difficult.
+
+2. Scalability Issues
+As the number of APs increases, it becomes harder to scale the network efficiently.
+Autonomous APs do not coordinate with each other automatically (no centralized intelligence), so optimizing channel planning, roaming and load balancing becomes almost impossible manually in a large deployment.
+
+3. Lack of Centralized Control and Monitoring
+Without a controller, there is no single dashboard to monitor AP status, client health, RF interference, or troubleshoot problems.
+Detecting network problems (like rogue APs, high channel utilization, or dead zones) becomes manual and very slow.
+

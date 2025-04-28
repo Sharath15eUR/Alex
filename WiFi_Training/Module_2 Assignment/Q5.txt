@@ -1,0 +1,28 @@
+Here’s how it works step-by-step:
+
+1. Tunnel Establishment:
+When an AP boots up, it discovers the controller using methods like DHCP Option 43, DNS, or broadcasting.
+The AP initiates a CAPWAP Control Channel and Data Channel setup.
+A DTLS handshake (if security is enabled) is performed to create a secure control tunnel.
+
+2. Keepalive Messages:
+After the tunnels are established, the AP and controller periodically exchange keepalive (heartbeat) messages over the control tunnel.
+This ensures that both the AP and controller know the connection is still active.
+If no keepalive is received within a certain time window (e.g., 30 seconds, depending on configuration), the tunnel is considered lost and the AP may reboot or attempt to rejoin.
+
+3. Session Timeouts and Retries:
+CAPWAP includes built-in timers to monitor the connection.
+If control messages or keepalives are missed for a configured number of retries, the AP will restart the discovery and join process to find a controller again.
+
+4. DTLS Session Maintenance:
+If encryption is enabled, the DTLS session must be kept alive.
+Re-negotiation can happen after long periods to maintain encryption security.
+Session keys may be refreshed based on policy.
+
+5. Error Handling and Failover:
+If the AP detects that the controller is unreachable, it can failover to a secondary backup controller if one is configured.
+Otherwise, the AP resets and tries to rediscover a controller to re-establish CAPWAP tunnels.
+
+6. Dynamic Updates:
+Even after establishment, any dynamic changes like VLAN assignment, policy updates, or radio configuration changes are pushed through the control tunnel without requiring a new tunnel setup.
+
