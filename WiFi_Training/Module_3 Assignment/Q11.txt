@@ -1,0 +1,9 @@
+In Wi-Fi, the PPDU (Physical Protocol Data Unit) formats have evolved across generations to support new features, improve efficiency, and increase data rates. Each Wi-Fi standard (like 802.11a/b/g/n/ac/ax) defines specific PPDU types with different frame structures suited to their capabilities. The main types of PPDUs include:
+
+1. Legacy PPDU: Used in 802.11a/g, it has a simple structure with a preamble (for synchronization) and a payload. It supports basic OFDM modulation with no advanced features like MIMO.
+
+2. HT PPDU (High Throughput PPDU): Introduced in 802.11n, it supports MIMO and higher data rates. It includes fields like HT-SIG (High Throughput Signal), HT Training fields, and a longer preamble for better channel estimation and MIMO operations.
+
+3. VHT PPDU (Very High Throughput PPDU): Defined in 802.11ac, this format introduces VHT-SIG fields, VHT-STF (Short Training Field), and VHT-LTF (Long Training Fields) to support higher-order modulations (like 256-QAM) and wider channel bandwidths (up to 160 MHz) for very fast speeds.
+
+4. HE PPDU (High Efficiency PPDU): Introduced in 802.11ax (Wi-Fi 6), it is designed for extremely dense environments. HE PPDU supports OFDMA, MU-MIMO uplink and downlink, and BSS coloring. It has different formats like HE SU (Single User), HE MU (Multi-User), HE Extended Range, and HE Trigger-based PPDUs, each optimized for different types of communication scenarios.

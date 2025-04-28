@@ -1,0 +1,8 @@
+* How Modulation Works in the PHY Layer:
+1. Signal Representation: A digital data stream is represented as a sequence of symbols. These symbols are mapped onto a carrier wave using a specific modulation scheme.
+
+2. Carrier Wave: The carrier wave is a high-frequency electromagnetic wave, which serves as the basis for the transmission of data.
+
+3. Modulation Techniques: Different schemes adjust the carrier wave in ways that can represent multiple bits per symbol, allowing for higher data rates or better robustness against noise and interference.
+
+4. Demodulation: On the receiving end, the receiver demodulates the signal, extracting the data by mapping the received signal back to the original bits.

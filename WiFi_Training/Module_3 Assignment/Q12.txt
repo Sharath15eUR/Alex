@@ -1,0 +1,8 @@
+Data Rate=(Number of bits per symbol per subcarrier)×(Number of subcarriers)×(Coding rate)×(Number of spatial streams)×(Symbol rate)
+
+-> Modulation scheme (like BPSK, QPSK, 16-QAM, 64-QAM, 256-QAM) determines how many bits are carried per symbol (e.g., QPSK = 2 bits per symbol, 16-QAM = 4 bits per symbol, etc.).
+-> Coding rate (like 1/2, 2/3, 3/4, 5/6) represents the amount of error correction used. A higher coding rate means less redundancy and a higher data rate.
+-> Channel bandwidth (20 MHz, 40 MHz, 80 MHz, 160 MHz) affects how many subcarriers are available (more bandwidth = more subcarriers).
+-> Number of subcarriers depends on channel bandwidth and standard (for example, in a 20 MHz channel under 802.11n/ac/ax, 52 subcarriers are used for data).
+-> Spatial streams mean the number of independent data paths created with multiple antennas (MIMO technology), and more streams increase the data rate proportionally.
+-> Symbol rate is related to how fast symbols are transmitted, and it depends on the standard and guard interval. Using a short guard interval (SGI) (400 ns instead of 800 ns) increases the symbol rate and thus the data rate.

@@ -1,0 +1,13 @@
+1. DSSS (Direct Sequence Spread Spectrum)
+How It Works:
+In DSSS, the data signal is multiplied by a pseudorandom noise (PN) sequence known as a chip sequence.
+The PN sequence is much longer than the data bit sequence, meaning each data bit is spread over a wide bandwidth (hence the term "spread spectrum").
+This expands the signal across a broad frequency range, making it much harder to detect or jam.
+Receiver: The receiver knows the PN sequence and can reverse the process, recovering the original data.
+
+2. FHSS (Frequency Hopping Spread Spectrum)
+How It Works:
+In FHSS, the carrier signal hops between different frequency channels in a pseudorandom sequence.
+The hopping sequence is known to both the transmitter and receiver, so they both switch frequencies at the same time in sync.
+The signal is spread across a wide frequency range by hopping across different frequencies, making it harder for interference to disrupt communication.
+The transmitter and receiver hop to the next frequency after a fixed interval (called the hop rate), ensuring that the signal never stays on one frequency for too long.

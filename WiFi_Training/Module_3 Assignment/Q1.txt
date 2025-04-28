@@ -1,0 +1,85 @@
+1. 802.11a
+Frequency: 5 GHz band
+Modulation: Orthogonal Frequency Division Multiplexing (OFDM)
+Maximum Data Rate: 54 Mbps
+Range: Shorter range due to higher frequency
+
+Characteristics:
+Less interference due to the 5 GHz band.
+Primarily used in high-density environments like offices.
+No backward compatibility with 802.11b/g (2.4 GHz band).
+
+2. 802.11b
+Frequency: 2.4 GHz band
+Modulation: Complementary Code Keying (CCK)
+Maximum Data Rate: 11 Mbps
+Range: Longer range compared to 802.11a (due to lower frequency)
+
+Characteristics:
+Lower speed and less efficient compared to 802.11a.
+Prone to interference from devices like microwaves and Bluetooth.
+More range but less data rate and efficiency.
+
+3. 802.11g
+Frequency: 2.4 GHz band
+Modulation: OFDM
+Maximum Data Rate: 54 Mbps
+Range: Similar to 802.11b (longer range than 802.11a)
+
+Characteristics:
+Backward compatible with 802.11b.
+Improved data rate and efficiency compared to 802.11b.
+Prone to interference from other devices in the 2.4 GHz range.
+
+4. 802.11n (Wi-Fi 4)
+Frequency: 2.4 GHz and 5 GHz bands
+Modulation: OFDM, MIMO (Multiple Input Multiple Output)
+Maximum Data Rate: 600 Mbps (with 4 spatial streams)
+Range: Improved range due to MIMO technology
+
+Characteristics:
+MIMO technology enables the use of multiple antennas to increase throughput.
+Dual-band operation allows use of both 2.4 GHz and 5 GHz bands.
+Improved reliability and performance in environments with interference.
+Backward compatible with 802.11a/b/g.
+
+5. 802.11ac (Wi-Fi 5)
+Frequency: 5 GHz band
+Modulation: OFDM, 256-QAM (Quadrature Amplitude Modulation), MU-MIMO (Multi-User MIMO)
+Maximum Data Rate: 1.3 Gbps (with 3 spatial streams) up to 3.5 Gbps (with 8 spatial streams)
+Range: Similar to 802.11n but better performance at longer ranges due to advanced modulation techniques
+
+Characteristics:
+MU-MIMO allows multiple devices to communicate simultaneously, improving efficiency.
+Wider channel bandwidth (up to 160 MHz).
+Higher throughput due to 256-QAM.
+Backward compatible with 802.11n.
+Focuses on the 5 GHz band, minimizing interference.
+
+6. 802.11ax (Wi-Fi 6)
+Frequency: 2.4 GHz and 5 GHz (future support for 6 GHz with Wi-Fi 6E)
+Modulation: OFDMA (Orthogonal Frequency Division Multiple Access), 1024-QAM, MU-MIMO
+Maximum Data Rate: 9.6 Gbps (with 8 spatial streams)
+Range: Improved range with more efficient spectrum usage and better handling of interference
+
+Characteristics:
+OFDMA allows more efficient spectrum usage by subdividing channels and serving multiple devices simultaneously.
+1024-QAM increases throughput.
+Target Wake Time (TWT) improves battery life for IoT devices.
+MU-MIMO has been enhanced to support uplink as well as downlink communication.
+Wi-Fi 6E introduces the 6 GHz band, increasing available spectrum.
+Backward compatible with 802.11a/b/g/n/ac.
+
+7. 802.11be (Wi-Fi 7) (under development, expected release 2024)
+Frequency: 2.4 GHz, 5 GHz, and 6 GHz bands
+Modulation: 4096-QAM, MU-MIMO, OFDMA
+Maximum Data Rate: Up to 46 Gbps
+Range: Further improvements due to higher-order modulation
+
+Characteristics:
+Massive MIMO (up to 16 streams) to boost throughput.
+Channel bonding of up to 320 MHz channels.
+Higher-order modulation (4096-QAM) for higher throughput.
+Enhanced performance in dense environments (offices, stadiums, etc.)
+Supports 6 GHz for more spectrum.
+
