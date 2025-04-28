@@ -1,0 +1,31 @@
+1. Range
+
+Wi-Fi 6:
+Wi-Fi 6 operates in the 2.4 GHz and 5 GHz frequency bands. The 2.4 GHz band generally offers better range compared to the 5 GHz band because lower frequencies propagate better through obstacles like walls and floors. However, the 2.4 GHz band is more congested due to its widespread use by many devices (e.g., microwaves, Bluetooth, older Wi-Fi devices), which can negatively affect range and performance.
+The 5 GHz band offers higher speeds but has a shorter range and less penetration through obstacles, as higher frequencies tend to have more difficulty passing through walls and other barriers.
+
+Wi-Fi 6E:
+Wi-Fi 6E operates in the 6 GHz band in addition to the 2.4 GHz and 5 GHz bands. The 6 GHz band provides higher bandwidth and faster speeds but has a shorter range compared to 2.4 GHz and 5 GHz. This is because higher frequencies, like 6 GHz, are more easily absorbed by obstacles such as walls, reducing their ability to cover large areas. Therefore, Wi-Fi 6E will likely provide a shorter range compared to Wi-Fi 6 in areas where the 6 GHz band is used.
+
+
+2. Bandwidth
+
+Wi-Fi 6:
+Wi-Fi 6 supports a maximum bandwidth of 160 MHz per channel in the 5 GHz band. In the 2.4 GHz band, Wi-Fi 6 can support smaller channels (20 MHz, 40 MHz) but with less bandwidth. This allows for good speeds, but the overall available bandwidth is limited in crowded areas with many devices.
+Wi-Fi 6 uses OFDMA (Orthogonal Frequency Division Multiple Access) and MU-MIMO (Multi-User, Multiple Input, Multiple Output) to improve bandwidth efficiency by allowing multiple devices to transmit at the same time, which helps reduce congestion.
+
+Wi-Fi 6E:
+Wi-Fi 6E expands the available spectrum by adding the 6 GHz band, which provides up to 1,200 MHz of additional spectrum (from 5.925 GHz to 7.125 GHz). This expansion allows for wider channels (up to 160 MHz), providing significantly more bandwidth and enabling faster data transfer speeds, especially for high-demand applications like 4K streaming, VR and gaming.
+The 6 GHz band adds up to 14 additional 80 MHz channels and 7 additional 160 MHz channels, further enhancing bandwidth availability compared to Wi-Fi 6, which is limited by the 2.4 GHz and 5 GHz bands.
+
+
+3. Interference
+
+Wi-Fi 6:
+Wi-Fi 6 operates in the 2.4 GHz and 5 GHz bands. While the 5 GHz band has more channels and less interference than the 2.4 GHz band, it can still suffer from interference in crowded environments, especially in urban areas or in places with many connected devices.
+The 2.4 GHz band is highly congested because it is used by many other devices, such as Bluetooth, baby monitors and microwaves, which leads to higher interference and potentially slower speeds or connection drops.
+Wi-Fi 6 mitigates interference using OFDMA and MU-MIMO, which help divide the available bandwidth into smaller chunks, allowing for more efficient communication between devices and reducing the impact of congestion and interference.
+
+Wi-Fi 6E:
+The 6 GHz band in Wi-Fi 6E is less crowded, as it is newly allocated for Wi-Fi use. This means there is much less interference from other devices in the 6 GHz band, making it ideal for high-density environments like stadiums, offices and apartments, where many devices are connected at once.
+Since the 6 GHz band is primarily dedicated to Wi-Fi 6E devices, there is much less potential interference from legacy technologies (such as Bluetooth and older Wi-Fi standards). This provides a cleaner spectrum and enables better performance for applications that require large amounts of data transfer with minimal interference.

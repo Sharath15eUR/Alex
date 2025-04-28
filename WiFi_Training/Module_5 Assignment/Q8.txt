@@ -1,0 +1,7 @@
+* 802.11k (Radio Resource Management):
+
+The primary purpose of 802.11k is to improve the efficiency of roaming by enabling better management of radio resources. It allows wireless devices to obtain information about the surrounding network environment, such as the signal strength, channel utilization and the load on neighboring access points. This information helps devices make more informed decisions when choosing an access point to roam to, which leads to smoother transitions and reduced roaming delays.
+
+* 802.11v (Wireless Network Management):
+
+The primary purpose of 802.11v is to enhance network management and roaming by providing additional capabilities for network-assisted roaming. While 802.11k focuses on providing radio resource information, 802.11v improves the roaming process by enabling better coordination between the device and the access points. 

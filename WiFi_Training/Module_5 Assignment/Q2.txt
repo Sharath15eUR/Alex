@@ -1,0 +1,5 @@
+* Increased Capacity and Throughput: By subdividing a channel into smaller sub-channels (RUs), OFDMA allows multiple devices to use the same channel at the same time, transmitting smaller packets concurrently. This leads to a significant increase in the network's overall capacity and throughput, as the channel is utilized more efficiently.
+
+* Reduced Latency: In traditional Wi-Fi (like in Wi-Fi 5), only one device can transmit at a time per channel, which can lead to delays when multiple devices contend for access to the channel. With OFDMA, the transmission is more parallel, so devices can transmit data without waiting for others to finish, which reduces latency and improves the responsiveness of the network.
+
+* Improved Spectrum Efficiency: In environments with many connected devices (e.g., stadiums, offices, or crowded homes), spectrum can become congested, leading to interference and slow speeds. OFDMA helps by dividing the available spectrum into smaller chunks and allocating these chunks to devices based on their needs. This results in less interference and better use of the available bandwidth.
