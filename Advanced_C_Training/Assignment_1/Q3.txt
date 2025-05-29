@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdbool.h>
+
+// Function to search for a key in a sorted 2D matrix
+bool searchMatrix(int **matrix, int n, int key) {
+    int row = 0;
+    int col = n - 1;  // Start at top-right corner
+
+    while (row < n && col >= 0) {
+        if (*(*(matrix + row) + col) == key) {
+            return true;
+        } else if (*(*(matrix + row) + col) > key) {
+            col--;  // Move left
+        } else {
+            row++;  // Move down
+        }
+    }
+
+    return false;  // Key not found
+}

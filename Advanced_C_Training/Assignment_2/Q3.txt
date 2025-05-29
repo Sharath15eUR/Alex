@@ -1,0 +1,62 @@
+LIST OF STANDARD SIGNALS:
+
+1. SIGINT- 2 (interrupt from keyboard) (Ctrl+c to invoke) 
+2. SIGTERM - 15 (termination request and it will be processed) (kill <pid> to invoke)
+3. SIGKILL - 9 (Kill signal thus process should terminate immediately without concentrating on cleaning up the resources) (kill -9 <pid>)
+4. SIGSTOP - 19 (To pause the process) (kill -19 <pid> or CTRL + Z)
+5. SIGCONT - 18 (To resume the paused process) (kill -18 <pid>)
+6. SIGSEGV - 11 (Invalid memory access - terminates process) (dereferencing NULL or freed memory)
+7. SIGCHLD - 17 (automatically generated whenever child process is terminated and ignored by default by parent process)
+8. SIGUSR1,2 - 10,12 (User defined signals with custom handling logic) (kill -USR1 <pid>)
+
+
+KERNEL CRASH : 
+1. Kernel is the main part or core of OS that handles processes, files, memory, devices or resources etc. 
+2. Kernel crash happens whenever something goes unexpected like module programming bugs, invalid memory access, Hardware problem etc, deadlocks etc. 
+3. In the event of kernel crash, system may reboot multiple times, or go off or kill that particular process that offends etc. 
+4. Null pointer dereference -> Here, In kernel code, If a pointer is declared NULL and if it is accessed, then it leads to Oops or panic.
+5. Kernel Oops is like minor accident which is not fatal but logs the error (writing to invalid memory or division by zero or writing in protected memory region)
+6. Kernel panic -> it is full system crash that is unrecoverable issue (Eg: No memory left, stack overflow, buffer overflow on critical systems, hardware failure etc. ) -> this leads to system going off.
+7. Segmentation fault -> Trying to access the memory which it doesn't own. Eg. returning local variable to main. Doing wrong pointer arithmetics.
+
+8. Deadlock -> It is the condition when two threads hold one resource already and waits for other resource to release already holded resource. Thus, no process will proceed further leading to CPU consumption (Heavier risk in case of spinlocks since sleep is not allowed)
+9. Hardware failure -> Overheating CPU or failing RAM or power supply issues lead to this error and it will lead to raising machine check exception.
+10. Invalid opcode -> when kernel receives a command which it cant understand -> due to buggy code or memory corruption 
+11. Watchdog timer expiry -> Periodically watchdog packets will be sent and responded by kernel to advertise its presence. However, if response is not obtained for significant time interval, system will be rebooted. 
+Kernel crashes can be debugged using Kernel module logs or memory snapshots using kdump like crash dump tools which activates light weight kernel in case of crash in memory to save current state of memory for future debugging. 
+
+
+TIME COMPLEXITY:
+1. It is the mathematical abstraction to evaluate how fast or slow the algorithm is considering only the input size irrespective of hardware. 
+2. Essential in time critical embedded programming or big data analytics etc.
+3. It uses asymptotic notations that expresses growth trends by ignoring constants and lower order terms
+	Big O (f(n)) -> takes worst case
+	Omega (f(n)) -> takes best or easy case
+	theta (f(n)) -> takes average or realistic case
+	small o (f(n)) -> strictly smaller than f(n)
+	small omega (f(n)) -> strictly greater than f(n)
+
+Common examples:
+	O(1)-> constant time access Eg: Array with indexing
+	O(log n) -> for binary search since it divides its search area into half every iteration
+	O(n) -> linear time Eg: Linear search (since it takes worst case)
+	O(n log n) -> Merge sort or quick sort
+	O(n squared) -> for matrix traversal or bubble sort or selection sort
+	O(2 ^ n) -> Recursive Fibonacci
+
+It considers each operation like arithmetics, swapping, comparison into play for calculating time complexity but focussing on dominant terms.
+
+
+
+MUTEX / SPINLOCK:
+1. A mutex is a synchronization primitive used to protect shared resources (critical sections) from concurrent access by multiple threads.
+2. Only one thread can hold the mutex at a time. Others must wait.
+3. Without Mutex : When multiple threads access and modify shared data simultaneously, unpredictable behavior occurs.
+4. Thus mutex guarantees that at any given time, only one thread is in critical section and all others will be in blocked or sleep mode until lock is released by holding thread.
+5. Recursive mutex is possible -> That is single thread can lock the same resource multiple times but should unlock the same number of times for other threads to utilize.
+6. Used in case of protecting shared variables, database, files , buffers etc. 
+7. Leads to deadlock if one thread holds resource-A and waits for B to release A and opposite in case of another thread -> no further steps will be proceeded consuming CPU unnecessarily. 
+8. OS should consider priority in this case when low priority thread holds any critical resource that high priority task later requests for. In this case, OS should do context switching.
+9. However, if short duration critical sessions are guaranteed, then mutex might not be the good choice since it introduces thread blocking or sleeping and context switching overhead. 
+10. Mutex is simply a structure in implementation with lock state, owner thread ID, queue of waiters, optional attributes.
+11. Spinlock is similar to mutex but it introduces spinning state for threads if resources are locked instead of blocking or sleeping.

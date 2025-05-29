@@ -1,0 +1,108 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+#include <unistd.h>
+#include <stdbool.h>
+#include <signal.h>
+#include <time.h>
+
+int N;  // Input for number of primes
+volatile sig_atomic_t stop = 0;  // Not used to exit, just a flag for info
+
+// Signal handler to ignore SIGINT, SIGTERM
+void handle_signal(int sig) {
+    printf("\n[Signal Handler] Received signal %d (%s). Ignoring termination.\n", sig, strsignal(sig));
+}
+
+// Helper to check if a number is prime
+bool isPrime(int num) {
+    if (num < 2) return false;
+    for (int i = 2; i*i <= num; i++) {
+        if (num % i == 0) return false;
+    }
+    return true;
+}
+
+// Utility to print timestamped messages
+void print_timestamp(const char *msg) {
+    time_t now = time(NULL);
+    struct tm *tm_info = localtime(&now);
+    char buffer[26];
+    strftime(buffer, sizeof(buffer), "%H:%M:%S", tm_info);
+    printf("[%s] %s\n", buffer, msg);
+}
+
+// Thread A: Sum of first N prime numbers
+void* thread_sum_primes(void* arg) {
+    print_timestamp("Thread A started");
+    int count = 0, num = 2, sum = 0;
+    while (count < N) {
+        if (isPrime(num)) {
+            sum += num;
+            count++;
+        }
+        num++;
+    }
+    printf("Thread A: Sum of first %d prime numbers is %d\n", N, sum);
+    print_timestamp("Thread A finished");
+    pthread_exit(NULL);
+}
+
+// Thread B: Prints every 2 seconds for 100s
+void* thread_print_2s(void* arg) {
+    print_timestamp("Thread B started");
+    time_t start = time(NULL);
+    while (time(NULL) - start < 100) {
+        print_timestamp("Thread 1 running");
+        sleep(2);
+    }
+    print_timestamp("Thread B finished");
+    pthread_exit(NULL);
+}
+
+// Thread C: Prints every 3 seconds for 100s
+void* thread_print_3s(void* arg) {
+    print_timestamp("Thread C started");
+    time_t start = time(NULL);
+    while (time(NULL) - start < 100) {
+        print_timestamp("Thread 2 running");
+        sleep(3);
+    }
+    print_timestamp("Thread C finished");
+    pthread_exit(NULL);
+}
+
+int main() {
+    // Register signal handlers
+    signal(SIGINT, handle_signal);
+    signal(SIGTERM, handle_signal);
+    signal(SIGQUIT, handle_signal);
+
+    printf("Enter N for sum of first N prime numbers: ");
+    scanf("%d", &N);
+
+    pthread_t t1, t2, t3;
+
+    print_timestamp("Main: Creating threads");
+
+    // Record start time
+    time_t program_start = time(NULL);
+
+    // Create threads
+    pthread_create(&t1, NULL, thread_sum_primes, NULL);
+    pthread_create(&t2, NULL, thread_print_2s, NULL);
+    pthread_create(&t3, NULL, thread_print_3s, NULL);
+
+    // Wait for threads
+    pthread_join(t1, NULL);
+    pthread_join(t2, NULL);
+    pthread_join(t3, NULL);
+
+    // End time
+    time_t program_end = time(NULL);
+    print_timestamp("Main: All threads completed");
+
+    printf("Total execution time: %ld seconds\n", program_end - program_start);
+
+    return 0;
+}

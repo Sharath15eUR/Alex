@@ -1,0 +1,60 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// Function to rearrange array with even numbers first, preserving order
+void rearrangeEvenOdd(int *arr, int size) {
+    int *temp = (int *)malloc(size * sizeof(int));  // Temporary array
+    if (!temp) {
+        printf("Memory allocation failed.\n");
+        return;
+    }
+
+    int *write = temp;
+
+    // First pass: copy even numbers
+    for (int i = 0; i < size; i++) {
+        if (*(arr + i) % 2 == 0) {
+            *write = *(arr + i);
+            write++;
+        }
+    }
+
+    // Second pass: copy odd numbers
+    for (int i = 0; i < size; i++) {
+        if (*(arr + i) % 2 != 0) {
+            *write = *(arr + i);
+            write++;
+        }
+    }
+
+    // Copy back to original array using pointer arithmetic
+    for (int i = 0; i < size; i++) {
+        *(arr + i) = *(temp + i);
+    }
+
+    free(temp);  // Free allocated memory
+}
+
+// Helper function to print array
+void printArray(int *arr, int size) {
+    for (int i = 0; i < size; i++) {
+        printf("%d ", *(arr + i));
+    }
+    printf("\n");
+}
+
+// Example usage
+int main() {
+    int arr[] = {3, 8, 5, 12, 9, 6, 7};
+    int size = sizeof(arr) / sizeof(arr[0]);
+
+    printf("Original array:\n");
+    printArray(arr, size);
+
+    rearrangeEvenOdd(arr, size);
+
+    printf("Rearranged array:\n");
+    printArray(arr, size);
+
+    return 0;
+}
